@@ -1,5 +1,6 @@
-﻿https://developers.redhat.com/blog/2020/03/23/ceph-storage-monitoring-with-zabbix/
+https://developers.redhat.com/blog/2020/03/23/ceph-storage-monitoring-with-zabbix/
 
+```
 ceph -s
 ceph mgr module ls
 ceph mgr module enable zabbix
@@ -12,7 +13,7 @@ ceph zabbix config-set zabbix_host 172.16.34.89
 ceph zabbix config-set identifier CEPH
 ceph zabbix config-set interval 120
 ceph zabbix config-show
-
+```
 Ручная отправка
 будет работать тлько на ноде в состоянии active. 
 
